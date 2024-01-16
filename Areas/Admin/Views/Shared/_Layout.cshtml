@@ -203,7 +203,7 @@
                             <ul class="nav flex-column sub-menu">
                                 <li class="nav-item"> <a class="nav-link" asp-action="index" asp-controller="portfolio">Portfolio</a></li>
                                 <li class="nav-item"> <a class="nav-link" asp-action="index" asp-controller="department">Department</a></li>
-                                <li class="nav-item"> <a class="nav-link" asp-action="index" asp-controller="position">Position</a></li>
+                                <li class="nav-item"> <a class="nav-link" asp-action="register" asp-controller="account">Account</a></li>
                                 <li class="nav-item"> <a class="nav-link" asp-action="index" asp-controller="service">Service</a></li>
                                 <li class="nav-item"> <a class="nav-link" asp-action="index" asp-controller="settings">Settings</a></li>
                             </ul>
@@ -211,7 +211,14 @@
                     </li>
                 </ul>
             </nav>
+            <div class="main-panel">
+                <div class="content-wrapper">
+
+                    <div class="row">
             @RenderBody()
+                    </div>
+                </div>
+            </div>
         </div>
         <!-- page-body-wrapper ends -->
     </div>
